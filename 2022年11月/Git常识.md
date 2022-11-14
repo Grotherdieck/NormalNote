@@ -32,3 +32,28 @@ git文件的状态：
 
 ![](https://router-picture-bed.oss-cn-chengdu.aliyuncs.com/img/20221114130621.png)
 
+# 四、git忽略提交某些内容
+
+像很多的项目配置文件，提交上去会显得很麻烦，配置``.gitignore``即可忽略一些文件。
+
+![](https://router-picture-bed.oss-cn-chengdu.aliyuncs.com/img/20221114131707.png)
+
+分枝不互相打扰时，没啥问题，当不同的分支要合并时，就有问题了。
+
+``git branch``查看本地有哪些分支。
+
+``git branch -r``列出所有远程分支。
+
+``git branch branchname``新建一个分支，但是仍停留在当前分支。
+
+``git chechout -b branchname``新建一个分支，并且切换这个分支，不加b单纯切换分支。
+
+``git merge branch``合并指定分支到当前分支
+
+合并的问题与解决方法：
+
+如果同一个文件在合并分支时都被修改了则会引起冲突：解决方法是我们可以修改冲突文件后重新提交，即选择要保留对方的代码还是保留你的代码，即冲突了就协商一下即可。
+
+``git branch -d branchname``删除分支。
+
+通常master分支应该非常稳定，用来发布新版本
