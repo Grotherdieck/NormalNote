@@ -56,4 +56,31 @@ git文件的状态：
 
 ``git branch -d branchname``删除分支。
 
-通常master分支应该非常稳定，用来发布新版本
+通常master分支应该非常稳定，用来发布新版本。
+
+# 五、git常见工作流程
+
+&emsp;&emsp;首先本地创建一个文件夹，然后克隆项目：
+
+![](https://router-picture-bed.oss-cn-chengdu.aliyuncs.com/img/20221114142548.png)
+
+```shell
+git clone url
+```
+
+&emsp;&emsp;然后创建一个新分支：
+
+```shell
+git checkout -b newbranch
+```
+
+&emsp;&emsp;修改后向远端提交分支：
+
+```shell
+git push origin newbranch
+```
+
+![](https://router-picture-bed.oss-cn-chengdu.aliyuncs.com/img/20221114142642.png)
+
+
+
